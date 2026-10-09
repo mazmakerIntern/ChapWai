@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chap Wai — Prototype ทุกสิทธิ์การใช้งาน</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <button class="icon-btn" id="btnMenu" aria-label="เปิดเมนู" aria-expanded="false"></button>
+  <div class="brand">
+    <span class="wordmark">MAZ</span>
+    <div class="brand-text">
+      <strong>Chap Wai</strong>
+      <span>Prototype · เฟส 1 · 8 โมดูล</span>
+    </div>
+  </div>
+
+  <div class="topbar-right">
+    <button class="btn outline" id="btnHub">กลับหน้ารวมสิทธิ์</button>
+    <label class="switcher" id="companySwitcher">
+      <span class="switcher-label">บริษัท</span>
+      <select id="companySelect"></select>
+    </label>
+
+    <label class="switcher">
+      <span class="switcher-label">สิทธิ์การใช้งาน</span>
+      <select id="roleSelect"></select>
+    </label>
+
+    <button class="ghost-btn" id="btnHelp" title="เกี่ยวกับ prototype นี้" aria-label="เกี่ยวกับ prototype นี้">?</button>
+  </div>
+</header>
+
+<div class="rolebar" id="rolebar"></div>
+
+<div class="support-bar" id="supportBar" hidden></div>
+<div class="nav-backdrop" id="navBackdrop"></div>
+<div class="layout">
+  <nav class="sidebar" id="sidebar"></nav>
+  <main class="main" id="main"></main>
+</div>
+
+<aside class="drawer" id="drawer" hidden>
+  <div class="drawer-backdrop" data-close-drawer></div>
+  <div class="drawer-panel" id="drawerPanel"></div>
+</aside>
+
+<div class="toast-wrap" id="toastWrap"></div>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-panel" id="modalPanel"></div>
+</div>
+
+<script src="assets/icons.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
